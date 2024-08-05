@@ -9,9 +9,25 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 93.75%;
+}
+
 body {
     background: #f0f2f5;
     font-family: 'Poppins';
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0,);
+    white-space: nowrap;
+    border-width: 0;
 }
 
 .container {
@@ -28,6 +44,23 @@ h2 {
 
     font-weight: normal;
 }
+
+/*links andbuttuons*/
+a {
+    color: #49aa26;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3dd705;
+}
+
+.button.new {
+    display: inline-block;
+    margin-bottom: 0.8rem;
+}
+
+
 
 /* header */
 header {
@@ -66,6 +99,10 @@ header {
 .card h3 {
     font-weight: normal;
     font-size: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .card p {
@@ -83,9 +120,13 @@ header {
 
 /*table*/
 #data-table {
+    display: block;
+
     width: 100%;
     border-spacing: 0 0.5rem;
     color: #969cb3;
+
+    overflow-x: auto;
 }
 
 table thead th {
@@ -115,6 +156,12 @@ table tbody tr td:first-child {
 
 }
 
+
+table thead tr th:last-child,
+table tbody tr td:last-child {
+    border-radius: 0 0.25rem 0.25rem 0;
+}
+
 td.description {
     color: var(--dark--blue);
 }
@@ -135,4 +182,18 @@ footer {
     color: var(--dark--blue);
 
     opacity: 0.5;
+}
+
+/*responsive*/
+
+@media (min-width: 800px) {
+    html{
+        font-size: 87.5%;
+    }
+
+    #balance {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
 }

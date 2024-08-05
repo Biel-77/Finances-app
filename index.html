@@ -16,36 +16,50 @@
 
 
     <header>
-        <h1  id="logo">dev.finance$</h1>
+        <img src="./assets/logo.svg" alt="logo dev finances">
     </header>
 <main class="container">
 
 <section id="balance">
-        <h2>Balanço</h2>
+        <h2 class="sr-only">Balanço</h2>
 
     <div class="card">
-        <h3>Entradas</h3>
+        <h3>
+            <span>Entradas</span>
+            <img src="./assets/income.svg" alt="imagem de Entradas">
+        </h3>
         <p>R$ 5.000,00</p>
     </div>
 
     <div class="card">
-        <h3>Saídas</h3>
+        <h3>
+            <span>Saídas</span>
+            <img src="./assets/expense.svg" alt="imagem de saidas">
+        </h3>
         <p>R$ 2.000,00</p>
     </div>      
 
     <div class="card total">
-        <h3>total</h3>
+        <h3>
+            <span>total</span>
+            <img src="./assets/total.svg" alt="imagem do total">
+        </h3>
         <p>R$ 3.000,00</p>
     </div>
  </section>
     <section id="transaction">
-    <h2>Transações</h2>
+    <h2 class="sr-only">Transações</h2>
+
+    <a href="#" class="button new">+ Nova Trasação</a>
+
+
     <table id="data-table">
         <thead>
             <tr>
                 <th>Descrição</th>
                 <th>valor</th>
                 <th>Data</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -53,14 +67,20 @@
                 <td class="description">Luz</td>
                 <td class="expense">- R$ 500,00</td>
                 <td class="date">23/04/2007</td>
+                <td> <img src="./assets/minus.svg" alt="remover transação">
+                <td>
             </tr>
                 <td class="description">Criação website</td>
                 <td class="income"> R$ 5.000,00</td>
                 <td class="date">23/04/2007</td>
+                <td> <img src="./assets/minus.svg" alt="remover transação">
+                    <td>
             </tr>
                 <td class="description">Internet</td>
                 <td class="expense">- R$ 200,00</td>
                 <td class="date">23/04/2007</td>
+                <td> <img src="./assets/minus.svg" alt="remover transação">
+                    <td>
             </tr>
         </tbody>
     </table>
